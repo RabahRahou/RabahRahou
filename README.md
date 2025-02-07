@@ -1,7 +1,7 @@
 👋 Hi, I’m Rabah Rahou
 
 💡 About Me:
-I’m a Data Science and FinTech enthusiast currently pursuing a Bachelor’s degree in MIAGE (Méthodes Informatiques Appliquées à la Gestion des Entreprises) at Université de Rennes. My goal is to apply data-driven solutions in financial services, risk modeling, and predictive analytics.
+I’m a Data Science and FinTech enthusiast currently pursuing a Bachelor’s degree in MIAGE (Méthodes Informatiques Appliquées à la Gestion des Entreprises) at Rennes's University. My goal is to apply data-driven solutions in financial services, risk modeling, and predictive analytics.
 
 🔍 What I’m Learning:
 
