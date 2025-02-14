@@ -1,0 +1,162 @@
+{
+    "id": 38300021,
+    "latitude": "4559000",
+    "longitude": "524200",
+    "cp": "38300",
+    "pop": "R",
+    "adresse": "Le Rivet",
+    "ville": "Domarin",
+    "horaires": {
+      "@automate-24-24": "1",
+      "jour": [
+        {
+          "@id": "1",
+          "@nom": "Lundi",
+          "@ferme": "",
+          "horaire": {
+            "@ouverture": "00:00",
+            "@fermeture": "23:59"
+          }
+        },
+        {
+          "@id": "2",
+          "@nom": "Mardi",
+          "@ferme": "",
+          "horaire": {
+            "@ouverture": "00:00",
+            "@fermeture": "23:59"
+          }
+        },
+        {
+          "@id": "3",
+          "@nom": "Mercredi",
+          "@ferme": "",
+          "horaire": {
+            "@ouverture": "00:00",
+            "@fermeture": "23:59"
+          }
+        },
+        {
+          "@id": "4",
+          "@nom": "Jeudi",
+          "@ferme": "",
+          "horaire": {
+            "@ouverture": "00:00",
+            "@fermeture": "23:59"
+          }
+        },
+        {
+          "@id": "5",
+          "@nom": "Vendredi",
+          "@ferme": "",
+          "horaire": {
+            "@ouverture": "00:00",
+            "@fermeture": "23:59"
+          }
+        },
+        {
+          "@id": "6",
+          "@nom": "Samedi",
+          "@ferme": "",
+          "horaire": {
+            "@ouverture": "00:00",
+            "@fermeture": "23:59"
+          }
+        },
+        {
+          "@id": "7",
+          "@nom": "Dimanche",
+          "@ferme": "",
+          "horaire": {
+            "@ouverture": "00:00",
+            "@fermeture": "23:59"
+          }
+        }
+      ]
+    },
+    "services": {
+      "service": "Automate CB 24/24"
+    },
+    "prix": [
+      {
+        "@nom": "Gazole",
+        "@id": "1",
+        "@maj": "2024-04-04 09:37:53",
+        "@valeur": "1.799"
+      },
+      {
+        "@nom": "E10",
+        "@id": "5",
+        "@maj": "2024-04-04 09:37:53",
+        "@valeur": "1.899"
+      },
+      {
+        "@nom": "SP98",
+        "@id": "6",
+        "@maj": "2024-04-04 09:37:53",
+        "@valeur": "1.979"
+      }
+    ],
+    "rupture": [
+      {
+        "@nom": "E85",
+        "@id": "3",
+        "@debut": "2017-02-06 08:00:00",
+        "@fin": "",
+        "@type": ""
+      },
+      {
+        "@nom": "GPLc",
+        "@id": "4",
+        "@debut": "2017-02-06 08:00:00",
+        "@fin": "",
+        "@type": ""
+      },
+      {
+        "@nom": "SP95",
+        "@id": "2",
+        "@debut": "2024-01-13 06:08:58",
+        "@fin": "",
+        "@type": "temporaire"
+      }
+    ],
+    "geom": {
+      "lon": 5.242,
+      "lat": 45.59
+    },
+    "gazole_maj": "2024-04-04T11:37:53+02:00",
+    "gazole_prix": 1.799,
+    "sp95_maj": null,
+    "sp95_prix": null,
+    "e85_maj": null,
+    "e85_prix": null,
+    "gplc_maj": null,
+    "gplc_prix": null,
+    "e10_maj": "2024-04-04T11:37:53+02:00",
+    "e10_prix": 1.899,
+    "sp98_maj": "2024-04-04T11:37:53+02:00",
+    "sp98_prix": 1.979,
+    "e10_rupture_debut": null,
+    "e10_rupture_type": null,
+    "sp98_rupture_debut": null,
+    "sp98_rupture_type": null,
+    "sp95_rupture_debut": "2024-01-13T07:08:58+01:00",
+    "sp95_rupture_type": "temporaire",
+    "e85_rupture_debut": null,
+    "e85_rupture_type": null,
+    "gplc_rupture_debut": null,
+    "gplc_rupture_type": null,
+    "gazole_rupture_debut": null,
+    "gazole_rupture_type": null,
+    "carburants_disponibles": ["Gazole", "E10", "SP98"],
+    "carburants_indisponibles": ["SP95", "E85", "GPLc"],
+    "carburants_rupture_temporaire": "SP95",
+    "carburants_rupture_definitive": null,
+    "horaires_automate_24_24": "Oui",
+    "services_service": ["Automate CB 24/24"],
+    "departement": "Isère",
+    "code_departement": "38",
+    "region": "Auvergne-Rhône-Alpes",
+    "code_region": "84",
+    "horaires_jour": "Automate-24-24, Lundi 00:00-23:59, Mardi 00:00-23:59, Mercredi 00:00-23:59, Jeudi 00:00-23:59, Vendredi 00:00-23:59, Samedi 00:00-23:59, Dimanche 00:00-23:59"
+  }

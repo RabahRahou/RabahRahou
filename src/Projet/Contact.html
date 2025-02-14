@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="static/StylesContact.css">
+    <link rel="stylesheet" href="static/Styles.css">
+    <script src="https://kit.fontawesome.com/b38ee170af.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@9/dist/sweetalert2.min.css">
+  
+    <title>Contact</title>
+</head>
+<body>
+    <nav class="nav">
+        <img src="static/Images/Logo Marketing Agency Digital.png" alt="Logo" class="nav-logo">
+        <div class="nav-list">
+            <a href="base.html">Accueil</a>
+            <a href="Projets.html">Projets</a>
+            <a href="Contact.html">Nous contacter</a>
+            <a href="JS.html">Notre JS</a>
+        </div>
+    </nav>
+
+    <div class="container">
+        <header class="header">
+            <h1 id="title" class="text-center">Formulaire de contact :</h1>
+            <p id="description" class="description text-center">
+                Nous vous remercions de prendre le temps de nous écrire.
+            </p>
+        </header>
+        <form method="post" action='/traiter_formulaire' id="formulaire-de-contact">
+            <div class="form-group">
+                <label id="name-label" for="nom">Nom</label>
+                <input type="text" name="nom" id="nom" class="form-control" placeholder="Entrez votre nom :" required="">
+            </div>
+            <div class="form-group">
+                <label id="name-label" for="prénom">Prénom</label>
+                <input type="text" name="prénom" id="prénom" class="form-control" placeholder="Entrez votre prénom :" required="">
+            </div>
+            <div class="form-group">
+                <label id="email-label" for="email">Email</label>
+                <input type="email" name="email" id="email" class="form-control" placeholder="Votre adresse mail :" required="">
+            </div>
+            <div class="form-group">
+                <label id="number-label" for="number">Âge<span class="clue">(Optionnel)</span></label>
+                <input type="number" name="age" id="number" min="12" max="80" class="form-control" placeholder="Âge">
+            </div>
+            <div class="form-group">
+                <p>Quelle est votre activité ?</p>
+                <select id="dropdown" name="activité" class="form-control" required="">
+                    <option disabled="" selected="" value="">Veuillez choisir une option</option>
+                    <option value="student">Étudiant</option>
+                    <option value="job">Emploi à temps plein</option>
+                    <option value="learner">Apprentissage à temps plein</option>
+                    <option value="preferNo">Préfère ne pas dire</option>
+                    <option value="other">Autre</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <p>Comment voudriez-vous être recontacté(e) ?</p>
+                <label>
+                    <input name="user-recommend" value="definitely" type="radio" class="input-radio" checked="">Mail
+                </label>
+                <label>
+                    <input name="user-recommend" value="maybe" type="radio" class="input-radio">LinkedIN
+                </label>
+            </div>
+
+            <div class="form-group">
+                <p>
+                    Votre question concerne un projet :
+                    <span class="clue">(Cochez toutes les options qui s'appliquent)</span>
+                </p>
+
+                <label>
+                    <input name="prefer" value="front-end-projects" type="checkbox" class="input-checkbox">Front-end
+                </label>
+                <label>
+                    <input name="prefer" value="back-end-projects" type="checkbox" class="input-checkbox">Back-end
+                </label>
+            </div>
+
+            <div class="form-group">
+                <p>Une question, recommendation ou idée à soumettre ?</p>
+                <textarea id="comments" class="input-textarea" name="comment" placeholder="Entrez votre commentaire ici..."></textarea>
+            </div>
+
+            <div class="form-group">
+                <button type="submit" id="submit" class="submit-button">
+                    Envoyer
+                </button>
+            </div>
+        </form>
+        <script>
+            document.addEventListener('DOMContentLoaded', function () {
+                var formulaire = document.getElementById('formulaire-de-contact');
+            
+                formulaire.addEventListener('submit', function (event) {
+                    // Utilise SweetAlert pour afficher la pop-up personnalisée
+                    Swal.fire({
+                        title: 'Demande reçue !',
+                        text: 'Nous avons bien reçu votre demande d\'informations. Nous vous contacterons bientôt.',
+                        icon: 'success',
+                        confirmButtonText: 'OK',
+                        customClass: {
+                            container: 'sweet-container', // Ajoutez cette classe pour personnaliser le style de SweetAlert
+                        },
+                    });
+                });
+            });
+        </script>
+            
+    </div>  
+
+    <!-- DEBUT SECTION PIED DE PAGE -->
+    <footer>
+        <div class="contact-links">
+            <a id="profile-link" href="https://github.com/RabahRahou/RabahRahou" target="_blank" class="btn contact-details"><i class="fab fa-github"></i> GitHub</a>
+            <a href="mailto:rahourabah.rr@gmail.com" class="btn contact-details"><i class="fas fa-at"></i> Send a mail</a>
+            <a href="https://fr.linkedin.com/in/rabah-rahou" target="_blank" class="btn contact-details"><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
+        </div>
+        <p>
+            Ceci est un projet réalisé pour l'UE GEN.
+        </p>
+        <p>&copy; 2023 Mon Entreprise</p>
+    </footer>
+    <!-- FIN SECTION PIED DE PAGE -->
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="static/prism.css">
+    <script src="static/prism.js"></script>
+    <link rel="stylesheet" href="static/Styles.css">
+    <script src="https://kit.fontawesome.com/b38ee170af.js" crossorigin="anonymous"></script>
+    <title>Notre_JS</title>
+</head>
+<body>  <!-- DEBUT NAV-->
+    <nav class="nav">
+        <img src="static/Images/Logo Marketing Agency Digital.png" alt="Logo" class="nav-logo">
+        <div class="nav-list">
+            <a href="base.html">Accueil</a>
+            <a href="Projets.html">Projets</a>
+            <a href="Contact.html">Nous contacter</a>
+            <a href="JS.html">Notre JS</a>
+        </div>
+    </nav>
+    <section class="JS_body">
+        <pre><code class="language-JS">
+            <script>
+                document.addEventListener('DOMContentLoaded', function () {
+                    var formulaire = document.getElementById('formulaire-de-contact');
+                
+                    formulaire.addEventListener('submit', function (event) {
+
+                        Swal.fire({
+                            title: 'Demande reçue !',
+                            text: 'Nous avons bien reçu votre demande d\'informations. Nous vous contacterons bientôt.',
+                            icon: 'success',
+                            confirmButtonText: 'OK',
+                            customClass: {
+                                container: 'sweet-container',
+                            },
+                        });
+                    });
+                });
+            </script>
+        </code></pre>
+
+        <script src="{{ url_for('static', filename='prism.js')}}"></script>
+    </section>
+    <!-- DEBUT SECTION PIED DE PAGE -->
+    <footer>
+        <div class="contact-links">
+            <a id="profile-link" href="https://github.com/RabahRahou/RabahRahou" target="_blank" class="btn contact-details"><i class="fab fa-github"></i> GitHub</a>
+            <a href="mailto:rahourabah.rr@gmail.com" class="btn contact-details"><i class="fas fa-at"></i> Send a mail</a>
+            <a href="https://fr.linkedin.com/in/rabah-rahou" target="_blank" class="btn contact-details"><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
+        </div>
+        <p>
+            Ceci est un projet réalisé pour l'UE GEN.
+        </p>
+        <p>&copy; 2023 Mon Entreprise</p>
+    </footer>
+    <!-- FIN SECTION PIED DE PAGE -->
+</body>
+</html>
